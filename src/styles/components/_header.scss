@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: $darkGold;
+            letter-spacing: 0.21rem;
+        }
+    }
+}
+
+.userName {
+    display: flex;
+    font-size: large;
+
+    .firstName {
+        color: $darkGold;
+        transform: rotate(-90deg);
+        margin-top: 4.5rem;
+        margin-left: -3rem;
+    }
+
+    .name {
+        color: $shinyGold;
+        margin-left: -3.5rem;
+        margin-top: 0.7rem;
+    }
+
+    &::after {
+        color: $shinyGold;
+    }
+}
+
+.nav-active {
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: $shinyGold;
+        position: absolute;
+        border-radius: 10px;
+        // bottom: 05;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.6s ease forwards;
+
+        @-webkit-keyframes anim {
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes anim {
+            to {
+                width: 100%;
+            }
+        }
+    }
+}

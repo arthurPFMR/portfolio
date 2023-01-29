@@ -1,0 +1,28 @@
+.bio {
+    margin-left: 25%;
+    color: $darkGold;
+    margin-top: 5rem;
+    font-size: 36px;
+    text-align: center;
+    width: 50%;
+    letter-spacing: 0.25rem;
+    
+    .glowText {
+        font-size: 50px;
+        color: $shinyGold;
+    }
+
+    .secondPart {
+        margin-top: -2rem;
+    }
+}
+
+.homePageHand {
+    object-fit:scale-down;
+    width: 55%;
+    height: 55%;
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+}
+
