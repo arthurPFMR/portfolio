@@ -3,8 +3,11 @@
     font-size: 36px;
     text-align: center;
     letter-spacing: 0.5rem;
-    max-width: 50%;
-    margin: 4.5rem auto;
+    margin: 6rem auto;
+
+    p {
+        margin-top: -1.8rem;
+    }
 }
 
 .homePageHand {
@@ -18,6 +21,18 @@
     filter: sepia(50%);
 }
 
+.homePageHandReverse {
+    transform:scaleX(-1);
+    object-fit: scale-down;
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: animateWindow 20s ease-in-out forwards;
+    filter: sepia(50%);
+}
+
 @keyframes animateWindow {
     0% {
         opacity: 0;
@@ -26,4 +41,9 @@
     100% {
         opacity: 1;
     }
+}
+
+.glow {
+    font-size: 46px;
+    color: $shinyGold;
 }

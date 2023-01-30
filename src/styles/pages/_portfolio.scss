@@ -1,0 +1,36 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: solid 1px $shinyGold;
+    .kasa {
+        background-image: url(../../assets/images/portfolioImg/kasaGrayscale.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        position: absolute;
+        width: 700px;
+        height: 450px;
+        right: 0;
+        margin-right: 1.5%;
+        margin-top: 70px;
+        filter: sepia(40%);
+    }
+
+    .kasa:hover {
+        background-image: url(../../assets/images/portfolioImg/kasa.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        position: absolute;
+        width: 700px;
+        height: 450px;
+        right: 0;
+        margin-right: 1.5%;
+        margin-top: 70px;
+    }
+
+    .description {
+        color: $darkGold;
+    }
+}

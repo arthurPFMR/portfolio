@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImg from "../assets/images/homePageHand.jpg";
+import backgroundImg from "../assets/images/homeImg/homePageHand.jpg";
 import Typewriter from "typewriter-effect";
 import FooterHome from "../components/FooterHome";
 import Header from "../components/Header";
@@ -18,7 +18,13 @@ const Home = () => {
               .pauseFor(50)
               .deleteAll()
               .typeString(
-                "Je suis un développeur web Front end intéressé et sensible à l'UX design."
+                "<p>Je suis un développeur web</p>"
+              )
+              .typeString(
+                "<p><span class=glow>Front end</span></p>"
+              )
+              .typeString(
+                "<p>intéressé et sensible</p> <p class=finalTextPart>à l'<span class=glow>UX design</span>.</p>"
               )
               .start();
           }}
@@ -30,6 +36,11 @@ const Home = () => {
         src={backgroundImg}
         alt="Une main, la paume vers le haut"
       />
+      {/* <img 
+        className="homePageHandReverse"
+        src={backgroundImg}
+        alt="Une main, la paume vers le haut"
+      /> */}
       <FooterHome />
     </section>
   );
