@@ -1,0 +1,81 @@
+.followMeAllPage {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    position: absolute;
+    color: $shinyGold;
+    bottom: 0;
+    right: 0;
+    margin-right: 1%;
+
+    p {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .line {
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        text-align: center;
+        width: 250px;
+        border-top: solid 2px;
+        
+    }
+
+    .gitAllPage {
+        background-image: url(../../assets/images/git.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .gitAllPage:hover {
+        background-image: url(../../assets/images/gitShiny.webp);
+    }
+
+    .linkedinAllPage {
+        background-image: url(../../assets/images/linkedin.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .linkedinAllPage:hover {
+        background-image: url(../../assets/images/linkedinShiny.webp);
+    }
+
+    .twitterAllPage {
+        background-image: url(../../assets/images/twitter.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .twitterAllPage:hover {
+        background-image: url(../../assets/images/twitterShiny.webp);
+    }
+}
+
+
+// @media screen and (max-width: 768px) {
+//     .git {
+//         background-image: url(../../assets/images/gitShiny.webp);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         object-fit: cover;
+//         width: 50px;
+//         height: 50px;
+//     }
+// }

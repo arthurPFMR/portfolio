@@ -1,4 +1,4 @@
-.header {
+.headerAllPages {
     display: flex;
     justify-content: space-between;
 
@@ -11,16 +11,7 @@
             letter-spacing: 0.21rem;
         }
     }
-    animation: animateWindow 20s ease-in-out forwards;
 
-    @keyframes animateWindow {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
 }
 
 .userName {

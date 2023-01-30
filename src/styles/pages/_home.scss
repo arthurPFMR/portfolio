@@ -1,28 +1,29 @@
 .bio {
-    margin-left: 25%;
     color: $darkGold;
-    margin-top: 5rem;
     font-size: 36px;
     text-align: center;
-    width: 50%;
-    letter-spacing: 0.25rem;
-    
-    .glowText {
-        font-size: 50px;
-        color: $shinyGold;
-    }
-
-    .secondPart {
-        margin-top: -2rem;
-    }
+    letter-spacing: 0.5rem;
+    max-width: 50%;
+    margin: 4.5rem auto;
 }
 
 .homePageHand {
-    object-fit:scale-down;
-    width: 55%;
-    height: 55%;
+    object-fit: scale-down;
+    width: 800px;
+    height: 450px;
     position: absolute;
-    left: 1rem;
+    left: 0;
     bottom: 0;
+    animation: animateWindow 20s ease-in-out forwards;
+    filter: sepia(50%);
 }
 
+@keyframes animateWindow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

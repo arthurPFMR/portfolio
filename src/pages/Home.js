@@ -1,17 +1,38 @@
-import React from 'react';
-import backgroundImg from "../assets/images/homePageHand.jpg"
+import React from "react";
+import backgroundImg from "../assets/images/homePageHand.jpg";
+import Typewriter from "typewriter-effect";
+import FooterHome from "../components/FooterHome";
+import Header from "../components/Header";
 
 const Home = () => {
-    return (
-        <section>
-        <div className='bio'>
-            <p className='firstPart'>Développeur <span className='glowText'>Front end </span>  
-            intéressé et sensible</p>
-            <p className='secondPart'>à l’<span className='glowText'>UX design</span></p>
-        </div>
-        <img className='homePageHand' src={backgroundImg} alt="Une main, la paume vers le haut" />
-        </section>
-    );
+  return (
+    <section>
+      <Header />
+      <div className="bio">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+
+              .typeString("Bienvenue,")
+
+              .pauseFor(50)
+              .deleteAll()
+              .typeString(
+                "Je suis un développeur web Front end intéressé et sensible à l'UX design."
+              )
+              .start();
+          }}
+        />
+      </div>
+
+      <img
+        className="homePageHand"
+        src={backgroundImg}
+        alt="Une main, la paume vers le haut"
+      />
+      <FooterHome />
+    </section>
+  );
 };
 
 export default Home;

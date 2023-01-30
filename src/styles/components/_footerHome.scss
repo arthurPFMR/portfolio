@@ -1,0 +1,92 @@
+.followMe {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    animation: animateWindow 20s ease-in-out forwards;
+    position: absolute;
+    color: $shinyGold;
+    bottom: 0;
+    right: 0;
+    margin-right: 1%;
+
+    p {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .line {
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        text-align: center;
+        width: 250px;
+        border-top: solid 2px;
+
+    }
+
+    .git {
+        background-image: url(../../assets/images/git.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .git:hover {
+        background-image: url(../../assets/images/gitShiny.webp);
+    }
+
+    .linkedin {
+        background-image: url(../../assets/images/linkedin.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .linkedin:hover {
+        background-image: url(../../assets/images/linkedinShiny.webp);
+    }
+
+    .twitter {
+        background-image: url(../../assets/images/twitter.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.3rem;
+    }
+
+    .twitter:hover {
+        background-image: url(../../assets/images/twitterShiny.webp);
+    }
+}
+
+
+@keyframes animateWindow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// @media screen and (max-width: 768px) {
+//     .git {
+//         background-image: url(../../assets/images/gitShiny.webp);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         object-fit: cover;
+//         width: 50px;
+//         height: 50px;
+//     }
+// }
